@@ -1,0 +1,30 @@
+<!DOCTYPE html>						
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Dungeon</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="script/javascript.js"></script>
+	</head>
+	<body>
+		<h1 class="textMenu" id="textMenu">Klik op start!</h1>
+		<div class="buttonPanel" id="buttonPanel">
+			<nav class="startMenu" id="startMenu">
+				<button class="startButton" onclick="onStartDungeon()">Start</button>
+			</nav>
+			<nav class="yesnoMenu" id="yesnoMenu">	
+				<button class="yesnoButton" onclick="onYes()">Ja</button>			
+				<button class="yesnoButton" onclick="onNee()">Nee</button>
+			</nav>
+			<nav class="swordMenu" id="swordMenu">
+				<button class="swordButton" onclick="onSlash()">Slash</button>
+				<button class="swordButton" onclick="onRoar()">Roar</button>
+				<button class="swordButton" onclick="onKick()">Kick</button>
+			</nav>
+		</div>
+
+		<h1 id="healthText">X</h1>
+		<button class="healthButton" id="healthButton" onclick="onUsePotion()">Gebruik health potion</button>
+		<p id="amountPotionText"></p>
+	</body>
+</html>
